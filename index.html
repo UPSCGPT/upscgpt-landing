@@ -10,7 +10,7 @@
     body {
       background: #000000;
       color: #f1f5f9;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+      font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -20,35 +20,38 @@
       padding: 2rem;
     }
     h1 {
-      font-size: 2.2rem;
+      font-size: 2.5rem;
+      font-weight: 700;
       margin-bottom: 1rem;
     }
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
+    p.tagline {
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
     }
-    a.cta-button {
-      background: #f1f5f9;
+    form {
+      margin-bottom: 2rem;
+    }
+    input[type="email"] {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 6px;
+      margin-right: 0.5rem;
+      font-size: 1rem;
+      width: 250px;
+    }
+    button {
+      padding: 0.75rem 1.25rem;
+      background-color: #f1f5f9;
       color: #000;
-      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
       font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      display: inline-block;
-      margin-bottom: 1.5rem;
+      cursor: pointer;
       transition: background 0.2s ease;
     }
-    a.cta-button:hover {
-      background: #e2e8f0;
-    }
-    .substack-embed {
-      width: 100%;
-      max-width: 420px;
-    }
-    iframe {
-      border: none;
-      width: 100%;
-      height: 100px;
+    button:hover {
+      background-color: #e2e8f0;
     }
     .social-icons {
       display: flex;
@@ -67,14 +70,15 @@
 </head>
 <body>
   <h1>⚙️ PSCGPT — AI-powered tools for your UPSC prep.</h1>
-  <p>📍 Karol Bagh, in your browser.</p>
+  <p class="tagline">📍 Karol Bagh, now in your browser.</p>
 
-  <a href="https://pscgpt.substack.com" target="_blank" class="cta-button">Join the Waitlist →</a>
+  <!-- Waitlist Form -->
+  <form action="https://formspree.io/f/mnqeknyy" method="POST">
+    <input type="email" name="email" placeholder="Enter your email" required />
+    <button type="submit">Join the Waitlist</button>
+  </form>
 
-  <div class="substack-embed">
-    <iframe src="https://pscgpt.substack.com/embed" style="background:transparent;" scrolling="no"></iframe>
-  </div>
-
+  <!-- Social Icons -->
   <div class="social-icons">
     <a href="https://x.com/pscgpt" title="X" target="_blank">
       <svg xmlns="http://www.w3.org/2000/svg" fill="#f1f5f9" viewBox="0 0 24 24"><path d="M21.5 3h-4.8l-3.7 4.4L8.8 3H2.5l6.7 8.1L2 21h4.8l4-4.7 4.4 4.7h6.3l-7-8.3L21.5 3zm-3.6 16h-2.4l-9.3-10.4h2.3l9.4 10.4z"/></svg>
@@ -87,6 +91,9 @@
     </a>
     <a href="https://youtube.com/channel/UCBEY7my7DfOOJkSClSXi2TQ" title="YouTube" target="_blank">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#FF0000" d="M549.7 124.1c-6.3-23.8-24.9-42.5-48.6-48.7C465.7 64 288 64 288 64s-177.7 0-213.1 11.4c-23.8 6.2-42.3 24.9-48.6 48.7C16 159.5 16 256 16 256s0 96.5 10.3 131.9c6.3 23.8 24.9 42.5 48.6 48.7 35.4 11.4 213.1 11.4 213.1 11.4s177.7 0 213.1-11.4c23.8-6.2 42.3-24.9 48.6-48.7C560 352.5 560 256 560 256s0-96.5-10.3-131.9zM232 334.7V177.3L352 256l-120 78.7z"/></svg>
+    </a>
+    <a href="https://pscgpt.substack.com" title="Substack" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><path fill="#FF6719" d="M0 0h300v49.4H0V0zm0 87.2h300v49.4H0V87.2zm0 87.2h300v49.4L150 262.8 0 223.8v-49.4z"/></svg>
     </a>
   </div>
 </body>
