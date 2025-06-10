@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "upscgpt.com"
+        }
+      ],
+      "destination": "https://pscgpt.com/:1",
+      "permanent": true
+    }
+  ]
+}
