@@ -20,18 +20,6 @@
       padding: 2rem;
     }
 
-    .badge {
-      background-color: #facc15;
-      color: #1e293b;
-      font-size: 0.875rem;
-      font-weight: 700;
-      padding: 0.4rem 0.8rem;
-      border-radius: 9999px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 1rem;
-    }
-
     h1 {
       font-size: 2.5rem;
       font-weight: 700;
@@ -42,10 +30,6 @@
       font-size: 1.4rem;
       font-weight: 400;
       margin-bottom: 2rem;
-      opacity: 0;
-      transform: translateY(-12px);
-      animation: fadeInDownGlow 1s ease-out forwards;
-      animation-delay: 0.5s;
     }
 
     form {
@@ -93,28 +77,9 @@
       width: 28px;
       height: 28px;
     }
-
-    @keyframes fadeInDownGlow {
-      0% {
-        opacity: 0;
-        transform: translateY(-12px);
-        text-shadow: none;
-      }
-      60% {
-        opacity: 1;
-        transform: translateY(2px);
-        text-shadow: 0 0 6px rgba(250, 204, 21, 0.4);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-        text-shadow: 0 0 8px rgba(250, 204, 21, 0.2);
-      }
-    }
   </style>
 </head>
 <body>
-  <div class="badge">Coming Soon</div>
   <h1>PSCGPT — AI-powered tools for your UPSC prep.</h1>
   <p class="tagline">Karol Bagh, now in your browser.</p>
 
@@ -123,7 +88,7 @@
     <input type="email" name="email" placeholder="Enter your Email" required />
     <button type="submit">Join the Waitlist</button>
   </form>
-  
+
   <!-- Social Icons -->
   <div class="social-icons">
     <a href="https://x.com/pscgpt" title="X" target="_blank">
