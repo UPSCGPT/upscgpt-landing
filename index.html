@@ -6,9 +6,9 @@
   <title>UPSCGPT</title>
   <style>
     body {
-      background: #0f172a;
+      background: #000000;
       color: #f1f5f9;
-      font-family: sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -17,21 +17,42 @@
       text-align: center;
       padding: 2rem;
     }
-    h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-    p { font-size: 1.2rem; margin-bottom: 2rem; }
-    a {
-      background: #3b82f6;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 0.5rem;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .social-icons a {
+      color: #f1f5f9;
       text-decoration: none;
-      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    .substack-embed {
+      margin-top: 1.5rem;
     }
   </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>AI-powered tools for your UPSC prep.</h1>
-  <p>Leave Karol Bagh. Join the Waitlist.</p>
-  <a href="#">Join the Waitlist</a>
+  <h1>AI-powered tools for your UPSC preparation.</h1>
+  <p>Karol Bagh now in your home.</p>
+
+  <div class="substack-embed">
+    <script async src="https://substackapi.com/widget.js" data-substack-url="https://substack.com/@upscgpt" data-color="blue"></script>
+  </div>
+
+  <div class="social-icons">
+    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  </div>
 </body>
 </html>
