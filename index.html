@@ -20,6 +20,18 @@
       padding: 2rem;
     }
 
+    .badge {
+      background-color: #facc15;
+      color: #1e293b;
+      font-size: 0.875rem;
+      font-weight: 700;
+      padding: 0.4rem 0.8rem;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+
     h1 {
       font-size: 2.5rem;
       font-weight: 700;
@@ -34,21 +46,6 @@
       transform: translateY(20px) scale(0.95);
       animation: glowIn 1s ease-out forwards;
       animation-delay: 0.5s;
-    }
-
-    .badge {
-      background-color: #facc15;
-      color: #1e293b;
-      font-size: 0.875rem;
-      font-weight: 700;
-      padding: 0.4rem 0.8rem;
-      border-radius: 9999px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 2rem;
-      opacity: 0;
-      animation: fadeIn 0.8s ease forwards;
-      animation-delay: 1.6s;
     }
 
     form {
@@ -114,18 +111,12 @@
         text-shadow: 0 0 10px rgba(250, 204, 21, 0.4);
       }
     }
-
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
   </style>
 </head>
 <body>
+  <div class="badge">Coming Soon</div>
   <h1>PSCGPT — AI-powered tools for your UPSC prep.</h1>
   <p class="tagline">Karol Bagh, now in your browser.</p>
-  <div class="badge">Coming Soon</div>
 
   <!-- Waitlist Form using Formspree -->
   <form action="https://formspree.io/f/mgvyabep" method="POST">
