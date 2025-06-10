@@ -8,7 +8,7 @@
           "value": "upscgpt.com"
         }
       ],
-      "destination": "https://pscgpt.com/:1",
+      "destination": "https://pscgpt.com/$1",
       "permanent": true
     }
   ]
