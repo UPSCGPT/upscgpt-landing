@@ -18,6 +18,14 @@
       min-height: 100vh;
       text-align: center;
       padding: 2rem;
+      opacity: 0;
+      animation: fadeIn 1s ease-in forwards;
+    }
+    h1, .tagline, form {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: slideUp 0.8s ease-out forwards;
+      animation-delay: 0.4s;
     }
     h1 {
       font-size: 2.5rem;
@@ -71,7 +79,16 @@
       transition: transform 0.2s ease;
     }
     .social-icons a:hover svg {
-      transform: scale(1.2);
+      transform: scale(1.2) translateY(-2px);
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
