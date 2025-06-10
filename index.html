@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PSCGPT</title>
-  <meta name="description" content="AI-powered tools for UPSC preparation. Karol Bagh now in your home.">
+  <meta name="description" content="AI-powered tools for UPSC preparation. Karol Bagh now in your browser.">
   <link rel="icon" type="image/png" href="logo.png" />
   <style>
     body {
@@ -18,25 +18,31 @@
       min-height: 100vh;
       text-align: center;
       padding: 2rem;
-      opacity: 0;
-      animation: fadeIn 1s ease-in forwards;
     }
-    h1, .tagline {
-      opacity: 0;
-      transform: translateY(20px) scale(0.95);
-      animation: slideUp 0.8s ease-out forwards;
+    .badge {
+      background-color: #facc15;
+      color: #1e293b;
+      font-size: 0.875rem;
+      font-weight: 700;
+      padding: 0.4rem 0.8rem;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
     }
     h1 {
       font-size: 2.5rem;
       font-weight: 700;
       margin-bottom: 1rem;
-      animation-delay: 0s;
     }
     p.tagline {
       font-size: 1.4rem;
       font-weight: 400;
       margin-bottom: 3rem;
-      animation-delay: 1.575s;
+      opacity: 0;
+      transform: translateY(20px) scale(0.95);
+      animation: fadeSlideScale 0.8s ease-out forwards;
+      animation-delay: 0.8s;
     }
     form {
       display: flex;
@@ -64,7 +70,6 @@
       border-radius: 6px;
       font-weight: bold;
       cursor: pointer;
-      transition: background 0.2s ease;
       font-size: 1rem;
     }
     button:hover {
@@ -78,15 +83,9 @@
     .social-icons a svg {
       width: 28px;
       height: 28px;
-      transition: transform 0.2s ease;
     }
-    .social-icons a:hover svg {
-      transform: scale(1.2) translateY(-2px);
-    }
-    @keyframes fadeIn {
-      to { opacity: 1; }
-    }
-    @keyframes slideUp {
+
+    @keyframes fadeSlideScale {
       to {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -95,8 +94,9 @@
   </style>
 </head>
 <body>
-  <h1 style="animation-delay: 0s;">PSCGPT — AI-powered tools for your UPSC prep.</h1>
-  <p class="tagline" style="animation-delay: 1.575s;">Karol Bagh, now in your browser.</p>
+  <div class="badge">Coming Soon</div>
+  <h1>PSCGPT — AI-powered tools for your UPSC prep.</h1>
+  <p class="tagline">Karol Bagh, now in your browser.</p>
 
   <!-- Waitlist Form using Formspree -->
   <form action="https://formspree.io/f/mgvyabep" method="POST">
