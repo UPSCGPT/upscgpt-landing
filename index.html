@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UPSCGPT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1Qk4ZxzqJ2w8TP5yn8M7Cu3w5OnuZjReDFplr+bm3qzAo8DdWy+pygRbIX+34uLjXEnAc5wzKfaPlNHZ5VhrLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
       background: #000000;
@@ -27,19 +28,24 @@
     }
     .social-icons {
       display: flex;
-      gap: 1rem;
+      gap: 1.5rem;
       margin-top: 2rem;
+      justify-content: center;
     }
     .social-icons a {
       color: #f1f5f9;
       text-decoration: none;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
+      transition: transform 0.2s ease;
+    }
+    .social-icons a:hover {
+      transform: scale(1.2);
+      color: #3b82f6;
     }
     .substack-embed {
       margin-top: 1.5rem;
     }
   </style>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <h1>AI-powered tools for your UPSC preparation.</h1>
@@ -52,7 +58,7 @@
   <div class="social-icons">
     <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
     <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
   </div>
 </body>
 </html>
